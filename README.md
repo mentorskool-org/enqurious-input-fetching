@@ -27,11 +27,7 @@ The result will be a CSV file containing all the MCQs and checkboxes of the proj
 
 ### Example Usage
 
-```bash
-https://your-lambda-url.amazonaws.com/?domain=python&project_ids=project_id_1,project_id_2&password=your_password
-```
-
-**Step 1:** Paste the given url in the browser:
+**Step 1:** Paste your url in the browser:
 ![Step 1](images/aws_function_url.png)
 
 
