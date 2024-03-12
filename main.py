@@ -197,7 +197,7 @@ def main():
         single_input_data["Tags"] = ", ".join(row["skills"])
 
         # 6. Score
-        single_input_data["Score"] = (len(row["skills"]) * 10) // len(row["skills"])
+        single_input_data["Score"] = (len(row["skills"]) * 10) // len(row["skills"]) if len(row["skills"]) > 1 else 0
 
         # 7. Now fetch the options dynamically
         single_input_data = fetch_options(single_input_data, row["payload.options"])
